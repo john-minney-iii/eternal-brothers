@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+// Components
+import Navbar from "@/src/components/Navbar";
+import Footer from "@/src/components/Footer";
+
 const keywords = [
     "Motorcycle Ministry",
     "Christian Motorcycle Ministry",
@@ -58,9 +62,11 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`antialiased`}
+                className="w-full h-screen flex flex-col antialiased"
             >
-                {children}
+                <Navbar />
+                <main>{children}</main>
+                <Footer />
             </body>
         </html>
     );
