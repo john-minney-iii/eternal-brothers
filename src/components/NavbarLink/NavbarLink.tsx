@@ -12,7 +12,7 @@ const NavbarLink: FC<NavLink> = ({
     return (
         <a
             className={clsx(
-                "text-lg hover:underline hover:text-ebm-red",
+                "text-xl hover:underline hover:text-ebm-red",
                 {
                     "underline text-ebm-red": active,
                 }

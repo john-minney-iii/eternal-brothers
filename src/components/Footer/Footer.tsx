@@ -1,4 +1,6 @@
 import type { FC, ReactNode } from "react";
+import Image from "next/image";
+import ebmCross from "@/public/ebm-cross.svg";
 
 // Components
 import { FaFacebookSquare } from "react-icons/fa";
@@ -40,17 +42,24 @@ const Footer: FC = () => {
                     </a>
                 )}
             </section>
-            <section>
-                <p>Cross</p>
-                {socialLinks.map(({ icon, href }, index) =>
-                    <a
-                        key={`social-link-${index}`}
-                        href={href}
-                        target="_blank"
-                    >
-                        {icon}
-                    </a>
-                )}
+            <section className="flex flex-col items-center justify-center">
+                <Image
+                    src={ebmCross.src}
+                    alt="EBM Cross"
+                    width={250}
+                    height={250}
+                />
+                <div className="w-full flex items-center justify-center gap-x-1">
+                    {socialLinks.map(({ icon, href }, index) =>
+                        <a
+                            key={`social-link-${index}`}
+                            href={href}
+                            target="_blank"
+                        >
+                            {icon}
+                        </a>
+                    )}
+                </div>
             </section>
         </div>
     );

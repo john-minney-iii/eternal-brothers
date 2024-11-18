@@ -12,7 +12,7 @@ export default {
             colors: {
                 background: "var(--background)",
                 foreground: "var(--foreground)",
-                "ebm-red": "#8b0000",
+                "ebm-red": "#7b1d30",
             },
         },
     },
