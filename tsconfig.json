@@ -23,9 +23,10 @@
             "@/components/*": ["./src/components/*"],
             "@/forms/*": ["./src/forms/*"],
             "@/hooks/*": ["./src/utils/hooks/*"],
-            "@/types/*": ["./src/utils/types/*"],
+            "@/types": ["./src/utils/types"],
             "@/public/*": ["./public/*"],
-            "@/icons/*": ["./src/icons/*"]
+            "@/icons/*": ["./src/icons/*"],
+            "@/data/*": ["./src/utils/data/*"]
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

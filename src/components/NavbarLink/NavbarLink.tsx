@@ -1,13 +1,10 @@
 import type { FC, ReactNode } from "react";
 import clsx from "clsx";
 
-export type NavbarLinkProps = {
-    label: ReactNode;
-    href: string;
-    active: boolean;
-};
+// Types
+import type { NavLink } from "@/src/utils/types";
 
-const NavbarLink: FC<NavbarLinkProps> = ({
+const NavbarLink: FC<NavLink> = ({
     label,
     href,
     active
