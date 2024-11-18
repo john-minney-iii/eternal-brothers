@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import Link from "next/link";
 import clsx from "clsx";
 
 // Types
@@ -10,9 +11,9 @@ const NavbarLink: FC<NavLink> = ({
     active
 }) => {
     return (
-        <a
+        <Link
             className={clsx(
-                "text-xl hover:underline hover:text-ebm-red",
+                "hover:underline hover:text-ebm-red",
                 {
                     "underline text-ebm-red": active,
                 }
@@ -20,7 +21,7 @@ const NavbarLink: FC<NavLink> = ({
             href={href}
         >
             <p>{label}</p>
-        </a>
+        </Link>
     );
 };
 
