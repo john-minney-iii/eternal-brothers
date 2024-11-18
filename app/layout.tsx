@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
 
 // Components
 import Navbar from "@/src/components/Navbar";
 import Footer from "@/src/components/Footer";
+
+const ebmFont = localFont({
+    src: [
+        {
+            path: "../public/fonts/CELTG___.ttf"
+        }
+    ],
+    variable: "--ebm-font"
+});
 
 const keywords = [
     "Motorcycle Ministry",
@@ -62,7 +72,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className="w-full h-screen flex flex-col antialiased"
+                className={`w-full h-screen flex flex-col antialiased ${ebmFont.variable}`}
             >
                 <Navbar />
                 <main>{children}</main>

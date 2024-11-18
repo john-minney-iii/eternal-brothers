@@ -18,8 +18,9 @@ const Navbar: FC = () => {
                         alt="EBM Cross"
                         width={100}
                         height={100}
+                        priority
                     />
-                    <p className="text-ebm-red text-4xl">Eternal Brothers</p>
+                    <p className="text-ebm-red text-4xl font-ebm-font">Eternal Brothers</p>
                 </section>
                 <section className="flex gap-x-5">
                     {navLinks.map(({ label, href, active }, index) =>

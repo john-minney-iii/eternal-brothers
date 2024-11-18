@@ -14,6 +14,9 @@ export default {
                 foreground: "var(--foreground)",
                 "ebm-red": "#7b1d30",
             },
+            fontFamily: {
+                "ebm-font": "var(--ebm-font)",
+            },
         },
     },
     plugins: [],
