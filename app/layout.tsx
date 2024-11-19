@@ -9,7 +9,7 @@ import Footer from "@/src/components/Footer";
 const ebmFont = localFont({
     src: [
         {
-            path: "../public/fonts/CELTG___.ttf"
+            path: "../public/fonts/celtg.ttf"
         }
     ],
     variable: "--ebm-font"
