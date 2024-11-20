@@ -8,12 +8,13 @@ import type { NavLink } from "@/src/utils/types";
 const NavbarLink: FC<NavLink> = ({
     label,
     href,
-    active
+    active,
+    className
 }) => {
     return (
         <Link
             className={clsx(
-                "hover:underline hover:text-ebm-red",
+                `hover:underline hover:text-ebm-red ${className}`,
                 {
                     "underline text-ebm-red": active,
                 }

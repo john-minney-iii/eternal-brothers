@@ -45,7 +45,7 @@ const Navbar: FC = () => {
                 </section>
             </div>
             {isMenuOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center z-10">
+                <div className="fixed inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center z-10">
                     <nav className="flex flex-col gap-y-4">
                         {navLinks.map(({ label, href, active }, index) =>
                             <button key={`navbar-link-${index}`} onClick={() => setIsMenuOpen(false)}>
@@ -53,6 +53,7 @@ const Navbar: FC = () => {
                                     label={label}
                                     href={href}
                                     active={active}
+                                    className="text-xl"
                                 />
                             </button>
                         )}

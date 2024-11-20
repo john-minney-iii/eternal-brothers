@@ -4,4 +4,5 @@ export type NavLink = {
     label: ReactNode;
     href: string;
     active: boolean;
+    className?: string;
 };
