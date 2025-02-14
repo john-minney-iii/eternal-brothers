@@ -4,7 +4,7 @@ const navLinks: NavLink[] = [
     {
         label: "About Us",
         href: "#about-us",
-        active: true,
+        active: false,
     },
     {
         label: "How Can You Help",
